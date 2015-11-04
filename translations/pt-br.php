@@ -40,7 +40,7 @@ return array(
     'or' => 'ou',
     'in_month' => 'em', // e.g. weekly in January, May and August
     'in_week' => 'na', // e.g. yearly in week 3
-    'on' => 'se', // e.g. every day on Tuesday, Wednesday and Friday
+    'on' => 'na(o)', // e.g. every day on Tuesday, Wednesday and Friday
     'the_for_monthday' => 'o', // e.g. monthly on Tuesday the 1st
     'the_for_weekday' => 'o', // e.g. monthly on the 4th Monday
     'on the' => 'no', // e.g. every year on the 1st and 200th day
@@ -68,7 +68,7 @@ return array(
     'ordinal_number' => function ($str, $params) {
         $number = $params['number'];
 
-        $abbreviation = $number.'°';
+        $abbreviation = $number.'º';
         $isNegative = $number < 0;
         if ($isNegative) {
             $abbreviation = $abbreviation.' último';
